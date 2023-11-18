@@ -1,0 +1,264 @@
+import spacy
+import re
+# Load English tokenizer, tagger, parser and NER
+nlp = spacy.load("en_core_web_sm")
+
+# Read the contents of the text file
+with open("note1.txt", "r") as file:
+        text = file.read()
+
+
+def clean_text_with_number_sequences(text):
+   # Use regular expression to find and separate number sequences
+    cleaned_text = re.sub(r'(\d+-\d+)', r'\1 ', text)
+    #cleaned_text = cleaned_text.replace(":", "xxxx")
+    
+    # Use regular expression to separate lowercase and capital letters but only if "@" is not present
+    cleaned_text = re.sub(r'([^@a-z])([A-Z])', r'\1 \2', cleaned_text)
+    cleaned_text = re.sub(r'([a-z])([A-Z])', r'\1 \2', cleaned_text)
+    
+    # Strip leading and trailing spaces
+    cleaned_text = cleaned_text.strip()
+    
+    # Replace multiple consecutive whitespace characters with a single space
+    cleaned_text = re.sub(r'\s+', ' ', cleaned_text)
+    
+    return cleaned_text
+
+
+c_text = clean_text_with_number_sequences(text)
+
+print(c_text)
+doc = nlp(c_text)
+
+from spacy.matcher import Matcher
+matcher = Matcher(nlp.vocab)
+
+def extract_full_name(nlp_doc):
+    pattern = [{"POS": "PROPN"}, {"POS": "PROPN"}]
+    matcher.add("FULL_NAME", [pattern])
+    matches = matcher(nlp_doc)
+    for _, start, end in matches:
+        span = nlp_doc[start:end]
+        yield span.text
+
+
+def extract_hiring_department_info(text):
+    # Load the spaCy English language model
+    nlp = spacy.load("en_core_web_sm")
+    
+    # Process the input text
+    doc = nlp(text)
+    
+    for ent in doc.ents:
+        print(f"Entity: {ent.text}, Label: {ent.label_}")
+    # Define a Matcher with custom patterns
+    matcher = Matcher(nlp.vocab)
+    
+    # Define patterns for keywords and their corresponding department information
+   
+
+    patterns = [
+        [{"TEXT": "The Department"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": "Departments"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        [{"TEXT": "Locationxxxx"},{"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"POS": "PUNCT", "TEXT": ":"}, {"TEXT": "Location"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": {"in": ["Department:", "Location:"]}}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": {"regex": "Location:"}}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        [{"TEXT": "Department"}, {"LOWER": "of"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        [{"TEXT": "College"}, {"LOWER": "of"}, {"POS": "PROPN", "is_title": True, "OP": "+"}]
+    ]
+    
+    # Add patterns to the matcher
+    for pattern in patterns:
+        matcher.add("DEPARTMENT_INFO", [pattern])
+        print ("added patter ", pattern)
+    
+    # Initialize a dictionary to store department information
+    department_info = {}
+    print("Dictonary creation " , department_info)
+    # Find matches in the text
+    matches = matcher(doc)
+    print ("matches ", matches)
+    
+    for match_id, start, end in matches:
+       
+        keyword = doc[start]
+        print ("key word",keyword, "Start", start, "match_id", match_id)
+        department_name = doc[start + 1:end]
+        print ("dept nae here ", department_name)
+        department_info[keyword.text] = department_name.text
+        print("dep info " , department_info)
+    
+    return department_info
+
+
+def extract_hiring_department_infoo(doc):
+    # Load the spaCy English language model
+    #nlp = spacy.load("en_core_web_sm")
+    
+    # Process the input text
+    #doc = nlp(text)
+    
+    for ent in doc.ents:
+        print(f"Entity: {ent.text}, Label: {ent.label_}")
+    # Define a Matcher with custom patterns
+    matcher = Matcher(nlp.vocab)
+    
+    # Define patterns for keywords and their corresponding department information
+   
+
+    patterns = [
+        #[{"TEXT": "Departments"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": "Location"},{"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": "Location"},{"ORTH":":"},{"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": "Department"},{"ORTH":":"},{"POS": "PROPN", "is_title": True, "OP": "+"}],
+        [{"TEXT": "Department"},{"ORTH": ":"},{"POS": "PROPN", "is_title": True, "OP": "+"},{"POS": "ADP", "OP": "*"},{"POS": "PROPN", "is_title": True, "OP": "+"}],
+        [{"TEXT": "Location"},{"ORTH": ":"},{"POS": "PROPN", "is_title": True, "OP": "+"},{"POS": "ADP", "OP": "*"},{"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"POS": "PUNCT", "TEXT": ":"}, {"TEXT": "Location"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": {"in": ["Department:", "Location:"]}}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        #[{"TEXT": {"regex": "Location:"}}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        [{"TEXT": "Department"}, {"LOWER": "of"}, {"POS": "PROPN", "is_title": True, "OP": "+"}],
+        
+        [{"TEXT": "College"}, {"LOWER": "of"}, {"POS": "PROPN", "is_title": True, "OP": "+"}]
+    ]
+    
+    # Add patterns to the matcher
+    for pattern in patterns:
+        matcher.add("DEPARTMENT_INFO", [pattern])
+       
+        print ("added patter ", pattern)
+    
+    # Initialize a dictionary to store department information
+    department_info = {}
+    print("Dictonary creation " , department_info)
+    # Find matches in the text
+    matches = matcher(doc)
+    print ("matches ", matches)
+    
+    for match_id, start, end in matches:
+       
+        keyword = doc[start]
+        print ("key word",keyword, "Start", start, "match_id", match_id)
+        department_name = doc[start + 1:end]
+        print ("dept nae here ", department_name)
+
+        if keyword.text not in department_info:
+            department_info[keyword.text] = department_name.text
+            print("Added to department_info:", keyword.text, ":", department_name.text)  
+       
+    return department_info
+
+
+
+
+dept = extract_hiring_department_infoo(doc)
+print("fjj ", dept)
+
+
+def extract_deadline_date_with_entity(doc):
+    extracted_date = None
+    
+    # Initialize a matcher to find the keyword "Deadline"
+    matcher = Matcher(nlp.vocab)
+    matcher.add("Deadline", [[{"LOWER": "deadline"}]])
+    
+    matches = matcher(doc)
+    
+    for match_id, token_start, token_end in matches:
+        # Store the token index where "Deadline" is found
+        keyword_index = token_start
+        
+        # Check if the keyword was found and get its token index
+        if keyword_index is not None:
+            print(f"Token index of 'Deadline': {keyword_index}")
+            break  # Stop searching once the keyword is found
+
+    # Iterate through entities
+    for ent in doc.ents:
+        print(f"Entity: {ent.text}, Label: {ent.label_}, Start: {ent.start}, End: {ent.end}")
+    
+    return keyword_index
+
+def find_closest_date_entity(doc, index_point):
+    # Calculate start_token and end_token with a buffer of 20 tokens
+    start_token = max(0, index_point - 20)
+    end_token = index_point + 20
+    print( "start ", start_token, "end ", end_token)
+
+    # Extract entities within the specified boundaries
+    selected_entities = [ent for ent in doc.ents if start_token <= ent.start < end_token]
+
+    closest_date_entity = None
+    min_difference = float('inf')  # Initialize with a large value
+    
+    for ent in selected_entities:
+        if ent.label_ == "DATE":
+            start_index = ent.start  # Get the start index of the DATE entity
+            difference = abs(start_index - index_point)  # Calculate the difference
+            
+            if difference < min_difference:
+                min_difference = difference
+                closest_date_entity = ent
+    
+    return closest_date_entity
+
+# Call extract_deadline_date_with_entity with the doc as an argument
+index_point = extract_deadline_date_with_entity(doc)
+print("Extracted Deadline Date:", index_point)
+
+# Check if a closest date entity was found using the index_point
+if index_point is not None:
+    closest_date_entity = find_closest_date_entity(doc, index_point)
+    if closest_date_entity:
+        print("Closest DATE Entity:", closest_date_entity.text)
+        print("Start Index of Closest DATE Entity:", closest_date_entity.start)
+    else:
+        print("No DATE Entity found in the document.")
+else:
+    print("No 'Deadline' keyword found in the document.")
+
+
+
+
+
+
+with open("output3.txt", "a") as f:
+    print("Hello, world!", file=f)
+    print(c_text,file=f)
+
+
+
+# Analyze synta
+   # print("Noun phrases:", [chunk.text for chunk in doc.noun_chunks])
+   # print("Verbs:", [token.lemma_ for token in doc if token.pos_ == "VERB"])
+   # print ( " uuuj ",dept )
+    
+
+
+
+
+
+# Find named entities, phrases and concepts
+#for entity in doc.ents:
+    #print(entity.text, entity.label_)
+    
+#This is what bingchat said
+# Import the Matcher from spaCy
+
+# Define a function to extract full names
+
+
+
+
+#with open("output3.txt", "a") as f:
+
+    #print("          Noun phrases:", [chunk.text for chunk in doc.noun_chunks], file=f)
+    #print("          Verbs:", [token.lemma_ for token in doc if token.pos_ == "VERB"], file=f)
+    #print("THIS IOF THJE NAME ", next(extract_full_name(doc)))
+    #for entity in doc.ents:
+        #print(entity.text, entity.label_, file=f)
+        #print(entity.text, entity.label_)
+
+
+

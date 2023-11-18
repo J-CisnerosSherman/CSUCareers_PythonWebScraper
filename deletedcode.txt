@@ -1,0 +1,256 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        if matches1 and len(matches1B) == 1:
+            review_dates_docs = []
+            r_dates = []
+
+            match_id, start, end = matches1B[0]               # get the first match of the corresponding pattern
+            newline_token = None
+                
+            for token in doc1[end:]:
+                if token.text == '\n':
+                    print("found line space")
+                    newline_token = token
+                    break
+                
+            end_index = newline_token.i if newline_token else len(doc1)
+            date_doc = doc1[end:end_index]   
+            review_dates_docs.append(date_doc)
+            
+        
+            if len(review_dates_docs) == 1:
+
+                matcher_date = Matcher(nlp.vocab)
+                
+                for pattern in date_patterns:
+                    matcher_date.add("DATE", [pattern])
+                    matches_date = matcher_date(date_doc)
+                    matches_dateB = filter_matches(matches_date)
+                
+                    print("matches date 1",matches_dateB)
+
+                if matches_date and len(matches_dateB) == 1:
+
+                    match_id, start, end = matches_dateB[0]
+                    span_date2 = date_doc[start:end]
+                    print("span date 1",span_date2)
+                    output_dict["ReviewDate"] = span_date2.text
+                    print("output dict",output_dict)
+                    
+                
+                elif matches_date and len(matches_dateB) > 1:
+                    for match_id, start, end in matches_dateB:
+                        #AQUI <E QUEDe
+                        
+                        
+                        
+                        span_date2 = date_doc[start:end]
+                        print("span date 1",span_date2)
+                        r_dates.append(span_date2.text)
+                        print("output dict",output_dict)
+                        continue
+
+
+                    date_objs = [dateutil.parser.parse(date) for date in review_dates]
+                    earliest_date = min(date_objs)
+                    earliest_date_str = earliest_date.strftime('%Y-%m-%d')
+                    output_dict["ReviewDate"] = earliest_date_str
+
+            for match_id, start, end in matches1B:             # get the first match of the corresponding pattern
+
+                span = doc1[start:end]
+    
+                # Find the first newline character after the pattern
+                newline_token = None
+                
+                for token in doc1[end:]:
+                    if token.text == '\n':
+                        print("found line space")
+                        newline_token = token
+                        break
+                
+                end_index = newline_token.i if newline_token else len(doc1)
+
+                date_doc = doc1[end:end_index]
+                
+                review_dates_docs.append(date_doc)
+                print("span doc 1bb date",date_doc)
+
+
+                # Get all entities recognized as dates
+                #date_entities = [ent.text for ent in span_doc1.ents if ent.label_ == "DATE"]
+                #print("date entitiesafda ",date_entities)
+
+                #review_dates.extend(date_entities)
+                #print("review dates",review_dates)
+            if len(review_dates_docs) == 1:
+            
+                matcher_date = Matcher(nlp.vocab)
+                
+                for pattern in date_patterns:
+                    matcher_date.add("DATE", [pattern])
+                    matches_date = matcher_date(date_doc)
+                    matches_dateB = filter_matches(matches_date)
+                
+                    print("matches date 1",matches_dateB)
+
+                if matches_date and len(matches_dateB) == 1:
+
+                    match_id, start, end = matches_dateB[0]
+                    span_date2 = date_doc[start:end]
+                    print("span date 1",span_date2)
+                    output_dict["ReviewDate"] = span_date2.text
+                    print("output dict",output_dict)
+                    
+                
+                elif matches_date and len(matches_dateB) > 1:
+
+
+                    date_objs = [dateutil.parser.parse(date) for date in review_dates]
+                    earliest_date = min(date_objs)
+                    earliest_date_str = earliest_date.strftime('%Y-%m-%d')
+                    output_dict["ReviewDate"] = earliest_date_str
+            
+            elif len(review_dates_docs) > 1:
+            
+                for date_doc in review_dates_docs:
+
+                    matcher_date = Matcher(nlp.vocab)
+                
+                    for pattern in date_patterns:
+                        matcher_date.add("DATE", [pattern])
+                        matches_date = matcher_date(date_doc)
+                        matches_dateB = filter_matches(matches_date)
+                
+                        print("matches date 1",matches_dateB)
+
+                    if matches_date and len(matches_dateB) == 1:
+
+                        match_id, start, end = matches_dateB[0]
+                        span_date2 = date_doc[start:end]
+                        print("span date 1",span_date2)
+                        #output_dict["ReviewDate"] = span_date2.text
+                        r_dates.append(span_date2.text)
+                        print("output dict",output_dict)
+                        continue  #need for next loop 
+                
+                    elif matches_date and len(matches_dateB) > 1:
+                        date_objs = [dateutil.parser.parse(date) for date in review_dates]
+                        earliest_date = min(date_objs)
+                        earliest_date_str = earliest_date.strftime('%Y-%m-%d')
+                        #output_dict["ReviewDate"] = earliest_date_str
+                        r_dates.append(earliest_date_str)
+
+                if len(r_dates)>1:
+                    date_objs = [dateutil.parser.parse(date) for date in review_dates]
+                    earliest_date = min(date_objs)
+                    earliest_date_str = earliest_date.strftime('%Y-%m-%d')
+                    output_dict["ReviewDate"] = earliest_date_str
+
+
+
+
+
+
+    if output_dict["ReviewDate"] is None:          #checks if any of the values are empty in the output dictionary
+        
+        if sublist2: 
+            sublist_string2 = '\n'.join(sublist2)                        #strings in list are joined together with a new line   
+            doc2 = nlp(sublist_string2)    
+            matcher2 = Matcher(nlp.vocab)
+        
+            for pattern in patterns2:                                        # Add patterns to the matcher (Can delete once completed)
+                matcher2.add("KEY INFO", [pattern])
+                #print ("added pattern ", pattern) 
+                    
+            matches2 = matcher2(doc2)                              # finds matches in the doc object
+            matches2B = filter_matches(matches2)
+            
+            if matches2:
+                review_dates = []
+                for match_id, start, end in matches2B:             # get the first match of the corresponding pattern
+
+                    span = doc2[start:end]
+    
+                    # Find the first newline character after the pattern
+                    newline_token = None
+                
+                    for token in doc2[end:]:
+                        if token.text == '\n':
+                            newline_token = token
+                            break
+                
+                    end_index = newline_token.i if newline_token else len(doc2)
+                    span_doc2 = doc2[end:end_index]
+                    print("span doc 2 date",span_doc2)
+                    # Get all entities recognized as dates
+                    date_entities = [ent.text for ent in span_doc2.ents if ent.label_ == "DATE"]
+                    print("DATE ENTITES : ", date_entities)
+                    review_dates.extend(date_entities)
+                    print("review dates",review_dates)
+                if len(review_dates)>1:    
+                    date_objs = [dateutil.parser.parse(date) for date in review_dates]
+                    earliest_date = min(date_objs)
+                    earliest_date_str = earliest_date.strftime('%Y-%m-%d')
+                    output_dict["ReviewDate"] = earliest_date_str       
+    else:
+        return output_dict
+
+    if output_dict["ReviewDate"] is None:          #checks if any of the values are empty in the output dictionary
+        if sublist3: 
+            sublist_string3 = '\n'.join(sublist3)                        #strings in list are joined together with a new line   
+            doc3 = nlp(sublist_string3)    
+            matcher3 = Matcher(nlp.vocab)
+        
+            for pattern in patterns2:                                        # Add patterns to the matcher (Can delete once completed)
+                matcher3.add("KEY INFO", [pattern])
+                #print ("added pattern ", pattern) 
+                    
+            matches3 = matcher3(doc3)                              # finds matches in the doc object
+            matches3B = filter_matches(matches3)
+            if matches3:
+                review_dates = []
+                for match_id, start, end in matches3B:             # get the first match of the corresponding pattern
+
+                    span = doc3[start:end]
+    
+                    # Find the first newline character after the pattern
+                    
+                    newline_token = None
+                
+                    for token in doc3[end:]:
+                        if token.text == '\n':
+                            
+                            newline_token = token
+                            break
+                    
+                    end_index = newline_token.i if newline_token else len(doc3)
+                    print("end index",end_index)
+                    span_doc = doc3[end:end_index]
+                    print("span doc 3dsds date",span_doc)
+                    
+                    # Get all entities recognized as dates
+                    date_entities = [ent.text for ent in span_doc.ents if ent.label_ == "DATE"]
+                    print("DATE ENTITES dfsd f: ", date_entities)
+                    review_dates.extend(date_entities)
+                    print("review datesddddd",review_dates)
+
+                if len(review_dates)>1:    
+                    date_objs = [dateutil.parser.parse(date) for date in review_dates]
+                    earliest_date = min(date_objs)
+                    earliest_date_str = earliest_date.strftime('%Y-%m-%d')
+                    output_dict["ReviewDate"] = earliest_date_str  
+    
+    return output_dict

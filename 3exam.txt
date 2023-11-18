@@ -1,0 +1,239 @@
+Printing the dam job  {'PositionID': 102150, 'datePosted': '2/22/2023', 'closingDate': 'Open Until Filled', 'jobTitle': 'Education/Library Science (23/24 SSE 15)', 'apptType': 'Tenure-Track', 'location': 'Bakersfield', 'jobType': '1'}
+The type of job : <class 'dict'>
+The type of soup : <class 'bs4.BeautifulSoup'>
+The type of dicipline_span : <class 'str'> Discipline:
+Education/Library Science
+The type of jobnum_span : <class 'bs4.element.Tag'>
+The type of job_num : <class 'str'>
+The type of tim_span : <class 'str'> Time Base:Full-Time
+TTTEEXXTTT ext content  Description:
+
+
+ Position:  Director, Doctoral Program in Educational Leadership
+
+
+ Type: Tenure-Track
+
+ Academic Year: 2023-2024
+
+ Available: Fall 2023
+
+
+ Location:  Doctoral Program in Educational Leadership
+
+ School of Social Sciences and Education
+
+ California State University, Bakersfield
+
+ 9001 Stockdale Highway, 22 EDUC
+
+ Bakersfield, CA  93311-1099
+
+
+ Contact:  R. Aaron Wisman
+
+ Chair, DPEL Director Search Committee
+
+ rwisman@csub.edu | (661) 654-3140
+
+
+
+
+Number of dics in list  3
+list 0 element   Time Base:Full-Time
+list 0 element   Discipline:
+Education/Library Science
+it was added to  job dic {'PositionID': 102150, 'datePosted': '2/22/2023', 'closingDate': 'Open Until Filled', 'jobTitle': 'Education/Library Science (23/24 SSE 15)', 'apptType': 'Tenure-Track', 'location': 'Bakersfield', 'jobType': '1', 'Time Base': 'Full-Time', 'Discipline': 'Education/Library Science', 'Description': 'Position: Director, Doctoral Program in Educational Leadership Type: Tenure-Track Academic Year: 2023-2024 Available: Fall 2023 Location: Doctoral Program in Educational Leadership School of Social Sciences and Education California State University, Bakersfield 9001 Stockdale Highway, 22 EDUC Bakersfield, CA 93311-1099 Contact: R. Aaron Wisman Chair, DPEL Director Search Committee rwisman@csub.edu | (661) 654-3140 Deadline: Applications submitted by March 30, 2023, will be given full consideration by the search committee. Applications can be submitted after this date, but review is at the discretion of the search committee. Further, the position remains open (application will be accepted) until the position is filled. University Background: CSU Bakersfield, founded in 1970, is a regional, comprehensive university serving the southern San Joaquin Valley of California. CSU Bakersfield’s service area covers nearly 25,000 square miles and is home to a socially and ethnically diverse population of over 11,000 students. CSU Bakersfield is the only four-year degree granting institution within a 100-mile radius. Due to this, CSU Bakersfield has a vital role in educational obtainment, economic development, and quality of life within the region. The accolades CSU Bakersfield has received include Third Way’s #5 Most Economic Mobility Index (2022), Washington Monthly’s #13 Best Bang for the Buck for Western Colleges and #26 Best Master’s University (2022), Best Value Schools’ #21 Most Affordable 4-Year Colleges (2022), and US News and World Report’s #25 Top Public School in the West (2022). CSU Bakersfield serves 9,800 undergraduate students and 1,400 graduate, credential, and post-baccalaureate students. 63.5% of CSU Bakersfield’s students are Hispanic/Latinx, 21.5% are Caucasian, 7.1% are Asian, 4.9% are African American, 2.3% are multiracial, 0.5% are American Indian/Alaskan Native, and 0.2% are Hawaiian/Pacific Islander. CSU Bakersfield is a federally designated Hispanic Serving Institution (HSI). Commitment to Diversity: The Doctoral Program in Educational Leadership (DPEL) within the School of Social Sciences and Education (SSE) at CSU Bakersfield is committed to academic and inclusive excellence and diversity within the faculty, staff, and student body. School Information: At the School of Social Sciences and Education (SSE) at California State University, Bakersfield, we do more than just educate our students. We change their lives. And, more importantly, we teach them how to change the lives of others. Through our outstanding undergraduate, graduate, and professional programs, SSE provides the teachers, counselors, therapists, police officers, social workers who serve Kern County and beyond. We also prepare future leaders, professionals, researchers, and community advocates who enhance the quality of life for all people. Our majors truly do make a difference. For more information, please visit https://www.csub.edu/sse/ Program Information: The Doctoral Program in Educational Leadership (DPEL) at CSU Bakersfield prepares students to synthesize, scrutinize, utilize, and conduct rigorous inquiry upon which sound educational policy and practice can be anchored. The DPEL is organizationally situated within the SSE and offers an Ed.D. in Educational Leadership with two unique degree options: PK-12 Educational Leadership and Postsecondary Educational Leadership. The DPEL is designed with and facilitated by PK-20 community partners. CSU Bakersfield faculty and local PK-12 and higher-education administrators are among the primary instructional faculty in the program. For more information, please visit https://www.csub.edu/edd/ Position Description: California State University, Bakersfield seeks applications for the position of Director of the Doctoral Program in Educational Leadership (DPEL). Applicants at the rank of professor or associate professor are encouraged to apply. This is a position for a passionate and equity-driven, visionary leader who is a team player, with strong organizational skills and commitment to quality and continuous improvement. The Director of the DPEL program is responsible for coordinating all program activities, such as: • Active engagement in networking, marketing, and recruiting perspective students • Supporting program applicants and facilitating selection and admissions processes • Coordinating activities to support DPEL students (e.g., program orientation and matriculation meetings, dissertation writing seminars, etc.) • Serving as a primary student contact for advising, mentoring, and support • Cultivating relationships within the campus as well as the regional community and beyond • Facilitating shared governance and continuous improvement efforts of the DPEL program. For example: o Facilitate continuous improvement of program curriculum, instruction, and assessment o Facilitate the scheduling of courses, faculty teaching assignments, oversight of program budget and expenditures o Engage local educational partners in continuous improvement efforts o Coordinate program accreditation activities • Recruit, support, mentor, and facilitate the evaluation of DPEL faculty • Maintain the daily management and operation of the DPEL, coordinating with other units at CSUB to support DPEL operation (e.g., library, facilities, IT, etc.) In addition, the DPEL Director will: • Teach courses; chair and serve as a member on dissertation committees • Maintain an active research agenda, including a record of scholarly publications and presentations • Provide professionally related service to the School, University, community, and profession Minimum Qualifications: • Evidence of commitment to diversity, equity, and inclusion within and across educational institutions • Doctoral degree (i.e., Ph.D. or Ed.D.) in educational leadership or related field from an accredited institution of higher learning • Record of scholarly and professional achievement sufficient to merit a tenure-track/tenured position at the rank of associate or full professor • Evidence of successful teaching, advising, and mentoring students at the graduate level • Successful experience in building relationships and working collaboratively with diverse educational partners within and across educational institutions, and the communities they serve • Experience with fiscal and personnel management • Excellent communication skills Preferred Qualifications: • Experience facilitating internal and external educational and community partners in the development and implementation of strategic plans and continuous improvement efforts • A robust record of scholarly activity with an agenda centering on issues of diversity, equity, and inclusion in the field of educational leadership • Experience directing/coordinating graduate programs • Experience seeking and managing external grant funding • Evidence of successful PK-20 teaching and leadership experience • Evidence of serving on and chairing dissertation committees Rank and Salary: • Associate or full professor; rank and salary based on qualifications and experience • Anticipated annual salary range: $80,000 - $160,000 Application: In the application materials, please include: • A statement of contribution to diversity, equity and inclusion. The statement should include information on how the applicant currently or will potentially promote diversity, equity and inclusion through their teaching, research, leadership, and service at CSU Bakersfield; • An original letter of application addressing the responsibilities and qualifications described above; • Current vita; • Copy of all university transcripts verifying academic record and award of the terminal degree; and • Three (3) professional letters of reference. Please submit all application materials via email to: Rosie Soriano, DPEL Administrative Coordinator email: rsoriano@csub.edu phone: 661-654-3140 Background Check: A background check (including a criminal records check) must be completed satisfactorily before any candidate can be offered a position with the CSU. Failure to satisfactorily complete the background check may affect the application status of applicants or continued employment of current CSU employees who apply for the position. Out of State Employment: Per CSU-wide policy, all faculty who will begin initial employment (or return from a 12-month break in service) on or after January 1, 2022 are required to perform their work from within the State of California. Faculty assignments include in-person duties that must be performed in-person at the assigned location. Mandated Reporter: The person holding this position is considered a "mandated reporter" under the California Child Abuse and Neglect Reporting Act and is required to comply with the requirements set forth in CSU Executive Order 1083 as a condition of employment. Clery Act: CSUB\'s annual crime report includes statistics for the previous three years concerning reported crimes that occurred on campus, in certain off-campus centers, such as our Antelope Valley Satellite Campus and on property within, or immediately adjacent to and accessible from CSUB. The report also includes policies concerning security on campus, such as alcohol and drug use, crime prevention, reporting crimes, sexual assault, and other subjects. Additionally, a daily log of offenses is maintained and can be reviewed at the front desk of the Department of Public Safety. You can obtain a copy of the annual report by contacting the Department of Public Safety/University Police at (661) 654-2111 or by logging on to their website at: https://www.csub.edu/compliance/Clery. EEO Statement: CSUB is committed to Equal Employment. Opportunity. Applicants will be considered without regard to gender, race, age, color, religion, national origin, sexual orientation, marital status, disability or covered veterans’ status.'}
+Position: Director, Doctoral Program in Educational Leadership Type: Tenure- Track Academic Year: 2023-2024 Available: Fall 2023 Location: Doctoral Program in Educational Leadership School of Social Sciences and Education California State University, Bakersfield 9001 Stockdale Highway, 22 ED UC Bakersfield, CA 93311-1099 Contact: R. Aaron Wisman Chair, DP EL Director Search Committee rwisman@csub.edu | (661) 654-3140 Deadline: Applications submitted by March 30, 2023, will be given full consideration by the search committee. Applications can be submitted after this date, but review is at the discretion of the search committee. Further, the position remains open (application will be accepted) until the position is filled. University Background: CS U Bakersfield, founded in 1970, is a regional, comprehensive university serving the southern San Joaquin Valley of California. CS U Bakersfield’s service area covers nearly 25,000 square miles and is home to a socially and ethnically diverse population of over 11,000 students. CS U Bakersfield is the only four-year degree granting institution within a 100-mile radius. Due to this, CS U Bakersfield has a vital role in educational obtainment, economic development, and quality of life within the region. The accolades CS U Bakersfield has received include Third Way’s #5 Most Economic Mobility Index (2022), Washington Monthly’s #13 Best Bang for the Buck for Western Colleges and #26 Best Master’s University (2022), Best Value Schools’ #21 Most Affordable 4- Year Colleges (2022), and US News and World Report’s #25 Top Public School in the West (2022). CS U Bakersfield serves 9,800 undergraduate students and 1,400 graduate, credential, and post-baccalaureate students. 63.5% of CS U Bakersfield’s students are Hispanic/ Latinx, 21.5% are Caucasian, 7.1% are Asian, 4.9% are African American, 2.3% are multiracial, 0.5% are American Indian/ Alaskan Native, and 0.2% are Hawaiian/ Pacific Islander. CS U Bakersfield is a federally designated Hispanic Serving Institution ( HS I). Commitment to Diversity: The Doctoral Program in Educational Leadership ( DP EL) within the School of Social Sciences and Education ( SS E) at CS U Bakersfield is committed to academic and inclusive excellence and diversity within the faculty, staff, and student body. School Information: At the School of Social Sciences and Education ( SS E) at California State University, Bakersfield, we do more than just educate our students. We change their lives. And, more importantly, we teach them how to change the lives of others. Through our outstanding undergraduate, graduate, and professional programs, SS E provides the teachers, counselors, therapists, police officers, social workers who serve Kern County and beyond. We also prepare future leaders, professionals, researchers, and community advocates who enhance the quality of life for all people. Our majors truly do make a difference. For more information, please visit https://www.csub.edu/sse/ Program Information: The Doctoral Program in Educational Leadership ( DP EL) at CS U Bakersfield prepares students to synthesize, scrutinize, utilize, and conduct rigorous inquiry upon which sound educational policy and practice can be anchored. The DP EL is organizationally situated within the SS E and offers an Ed. D. in Educational Leadership with two unique degree options: PK-12 Educational Leadership and Postsecondary Educational Leadership. The DP EL is designed with and facilitated by PK-20 community partners. CS U Bakersfield faculty and local PK-12 and higher-education administrators are among the primary instructional faculty in the program. For more information, please visit https://www.csub.edu/edd/ Position Description: California State University, Bakersfield seeks applications for the position of Director of the Doctoral Program in Educational Leadership ( DP EL). Applicants at the rank of professor or associate professor are encouraged to apply. This is a position for a passionate and equity-driven, visionary leader who is a team player, with strong organizational skills and commitment to quality and continuous improvement. The Director of the DP EL program is responsible for coordinating all program activities, such as: • Active engagement in networking, marketing, and recruiting perspective students • Supporting program applicants and facilitating selection and admissions processes • Coordinating activities to support DP EL students (e.g., program orientation and matriculation meetings, dissertation writing seminars, etc.) • Serving as a primary student contact for advising, mentoring, and support • Cultivating relationships within the campus as well as the regional community and beyond • Facilitating shared governance and continuous improvement efforts of the DP EL program. For example: o Facilitate continuous improvement of program curriculum, instruction, and assessment o Facilitate the scheduling of courses, faculty teaching assignments, oversight of program budget and expenditures o Engage local educational partners in continuous improvement efforts o Coordinate program accreditation activities • Recruit, support, mentor, and facilitate the evaluation of DP EL faculty • Maintain the daily management and operation of the DP EL, coordinating with other units at CS UB to support DP EL operation (e.g., library, facilities, IT, etc.) In addition, the DP EL Director will: • Teach courses; chair and serve as a member on dissertation committees • Maintain an active research agenda, including a record of scholarly publications and presentations • Provide professionally related service to the School, University, community, and profession Minimum Qualifications: • Evidence of commitment to diversity, equity, and inclusion within and across educational institutions • Doctoral degree (i.e., Ph. D. or Ed. D.) in educational leadership or related field from an accredited institution of higher learning • Record of scholarly and professional achievement sufficient to merit a tenure-track/tenured position at the rank of associate or full professor • Evidence of successful teaching, advising, and mentoring students at the graduate level • Successful experience in building relationships and working collaboratively with diverse educational partners within and across educational institutions, and the communities they serve • Experience with fiscal and personnel management • Excellent communication skills Preferred Qualifications: • Experience facilitating internal and external educational and community partners in the development and implementation of strategic plans and continuous improvement efforts • A robust record of scholarly activity with an agenda centering on issues of diversity, equity, and inclusion in the field of educational leadership • Experience directing/coordinating graduate programs • Experience seeking and managing external grant funding • Evidence of successful PK-20 teaching and leadership experience • Evidence of serving on and chairing dissertation committees Rank and Salary: • Associate or full professor; rank and salary based on qualifications and experience • Anticipated annual salary range: $80,000 - $160,000 Application: In the application materials, please include: • A statement of contribution to diversity, equity and inclusion. The statement should include information on how the applicant currently or will potentially promote diversity, equity and inclusion through their teaching, research, leadership, and service at CS U Bakersfield; • An original letter of application addressing the responsibilities and qualifications described above; • Current vita; • Copy of all university transcripts verifying academic record and award of the terminal degree; and • Three (3) professional letters of reference. Please submit all application materials via email to: Rosie Soriano, DP EL Administrative Coordinator email: rsoriano@csub.edu phone: 661-654 -3140 Background Check: A background check (including a criminal records check) must be completed satisfactorily before any candidate can be offered a position with the CS U. Failure to satisfactorily complete the background check may affect the application status of applicants or continued employment of current CS U employees who apply for the position. Out of State Employment: Per CS U-wide policy, all faculty who will begin initial employment (or return from a 12-month break in service) on or after January 1, 2022 are required to perform their work from within the State of California. Faculty assignments include in-person duties that must be performed in-person at the assigned location. Mandated Reporter: The person holding this position is considered a "mandated reporter" under the California Child Abuse and Neglect Reporting Act and is required to comply with the requirements set forth in CS U Executive Order 1083 as a condition of employment. Clery Act: CS UB's annual crime report includes statistics for the previous three years concerning reported crimes that occurred on campus, in certain off-campus centers, such as our Antelope Valley Satellite Campus and on property within, or immediately adjacent to and accessible from CS UB. The report also includes policies concerning security on campus, such as alcohol and drug use, crime prevention, reporting crimes, sexual assault, and other subjects. Additionally, a daily log of offenses is maintained and can be reviewed at the front desk of the Department of Public Safety. You can obtain a copy of the annual report by contacting the Department of Public Safety/ University Police at (661) 654-2111 or by logging on to their website at: https://www.csub.edu/compliance/ Clery. EE O Statement: CS UB is committed to Equal Employment. Opportunity. Applicants will be considered without regard to gender, race, age, color, religion, national origin, sexual orientation, marital status, disability or covered veterans’ status.
+selected patterns  [[{'TEXT': 'Department'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}, {'POS': 'ADP', 'OP': '*'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}], [{'TEXT': 'Department/School'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}, {'POS': 'ADP', 'OP': '*'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}], [{'TEXT': 'Location'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}, {'POS': 'ADP', 'OP': '*'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}], [{'TEXT': 'Department'}, {'LOWER': 'of'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}], [{'TEXT': 'College'}, {'LOWER': 'of'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]]
+pattern number  0
+added pattern  [{'TEXT': 'Department'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}, {'POS': 'ADP', 'OP': '*'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+added pattern  [{'TEXT': 'Department/School'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}, {'POS': 'ADP', 'OP': '*'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+added pattern  [{'TEXT': 'Location'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}, {'POS': 'ADP', 'OP': '*'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+added pattern  [{'TEXT': 'Department'}, {'LOWER': 'of'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+added pattern  [{'TEXT': 'College'}, {'LOWER': 'of'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+key word Location Start 23 match_id 7845749665016287335
+dept nae here  : Doctoral Program
+Added to department_info: Location : : Doctoral Program
+key word Location Start 23 match_id 7845749665016287335
+dept nae here  : Doctoral Program in Educational
+key word Location Start 23 match_id 7845749665016287335
+dept nae here  : Doctoral Program in Educational Leadership
+key word Location Start 23 match_id 7845749665016287335
+dept nae here  : Doctoral Program in Educational Leadership School
+key word Department Start 1641 match_id 7845749665016287335
+dept nae here  of Public
+Added to department_info: Department : of Public
+key word Department Start 1641 match_id 7845749665016287335
+dept nae here  of Public Safety
+key word Department Start 1658 match_id 7845749665016287335
+dept nae here  of Public
+key word Department Start 1658 match_id 7845749665016287335
+dept nae here  of Public Safety/
+key word Department Start 1658 match_id 7845749665016287335
+dept nae here  of Public Safety/ University
+key word Department Start 1658 match_id 7845749665016287335
+dept nae here  of Public Safety/ University Police
+selected patterns  [[{'LOWER': 'deadline'}], [{'LOWER': 'review'}], [{'LOWER': 'consideration'}]]
+pattern number  1
+added pattern  [{'LOWER': 'deadline'}]
+added pattern  [{'LOWER': 'review'}]
+added pattern  [{'LOWER': 'consideration'}]
+matches for review date [(12433980285960436692, 74, 75), (12433980285960436692, 88, 89), (12433980285960436692, 103, 104)]
+Token index of 'Deadline': 74
+Token index of 'Deadline': 88
+Token index of 'Deadline': 103
+start  54 end  94
+start  68 end  108
+start  83 end  123
+updating total info  {'Deadline': March 30, 2023, 'consideration': March 30, 2023, 'review': None}
+selected patterns  [[{'LOWER': 'chair'}], [{'LOWER': 'committee'}], [{'LOWER': 'search committee'}]]
+pattern number  2
+added pattern  [{'LOWER': 'chair'}]
+added pattern  [{'LOWER': 'committee'}]
+added pattern  [{'LOWER': 'search committee'}]
+matches for review date [(12433980285960436692, 59, 60), (12433980285960436692, 65, 66), (12433980285960436692, 92, 93), (12433980285960436692, 111, 112), (12433980285960436692, 967, 968)]
+Token index of 'Deadline': 59
+Token index of 'Deadline': 65
+Token index of 'Deadline': 92
+Token index of 'Deadline': 111
+Token index of 'Deadline': 967
+start  29 end  89
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+start  35 end  95
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+start  62 end  122
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+start  81 end  141
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+start  937 end  997
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+updating total info  {'Chair': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'Phone': '(661) 654-3140', 'Email': rwisman@csub.edu, 'Committee': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'committee': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', None: None, 'chair': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+selected patterns  [[{'LOWER': 'contact'}], [{'LOWER': 'questions'}], [{'LOWER': 'inquiries'}]]
+pattern number  3
+added pattern  [{'LOWER': 'contact'}]
+added pattern  [{'LOWER': 'questions'}]
+added pattern  [{'LOWER': 'inquiries'}]
+matches for review date [(12433980285960436692, 54, 55), (12433980285960436692, 821, 822)]
+Token index of 'Deadline': 54
+Token index of 'Deadline': 821
+start  24 end  84
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+start  791 end  851
+No person entity found
+Added pattern  [{'TEXT': 'Contact'}, {'ORTH': ':'}, {'POS': 'PROPN', 'is_title': True, 'OP': '+'}]
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R.
+Added to department_info: Contact : : R.
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron
+Added to department_info: Contact : : R. Aaron
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman
+Added to department_info: Contact : : R. Aaron Wisman
+Key word Contact Start 54 match_id 7845749665016287335
+Dept name here  : R. Aaron Wisman Chair
+Added to department_info: Contact : : R. Aaron Wisman Chair
+what we got instead  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+what we got instead  : R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair
+added patter  [{'ORTH': '('}, {'SHAPE': 'ddd'}, {'ORTH': ')'}, {'SHAPE': 'ddd'}, {'ORTH': '-', 'OP': '?'}, {'SHAPE': 'dddd'}]
+updating total info  {'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'Phone': '(661) 654-3140', 'Email': rwisman@csub.edu, 'contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', None: None}
+Total info  {'Location': ': Doctoral Program', 'Department': 'of Public', 'Deadline': March 30, 2023, 'consideration': March 30, 2023, 'review': None, 'Chair': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'Phone': '(661) 654-3140', 'Email': rwisman@csub.edu, 'Committee': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'committee': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', None: None, 'chair': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+Printing  {'PositionID': 102150, 'datePosted': '2/22/2023', 'closingDate': 'Open Until Filled', 'jobTitle': 'Education/Library Science (23/24 SSE 15)', 'apptType': 'Tenure-Track', 'location': 'Bakersfield', 'jobType': '1', 'Time Base': 'Full-Time', 'Discipline': 'Education/Library Science', 'Location': ': Doctoral Program', 'Department': 'of Public', 'Deadline': March 30, 2023, 'consideration': March 30, 2023, 'review': None, 'Chair': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'Phone': '(661) 654-3140', 'Email': rwisman@csub.edu, 'Committee': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'committee': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', None: None, 'chair': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'Contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair', 'contact': ': R. : R. Aaron : R. Aaron Wisman : R. Aaron Wisman Chair'}
+The type of pairs : <class 'list'>

@@ -1,0 +1,30 @@
+Lemma 1
+ [screening, review]
+
+Lemma 2 
+[application, applicant, applications, applicants]
+
+lemma 3 
+[begin, begins, commences]
+
+lemma 4
+[on, by, in, until, starting, beginning ]
+
+lemma 5 
+[submit]
+
+lemma 6 
+[accepted, reviewed, completed, received]
+
+[apply, submit, completed buy
+
+patterns to match 
+
+"review/screnning of applications will begin ..."
+l1 + of +  l2 + might have will + l3(can have just begin) + might have l6
+might have completed before of and have application materials 
+
+"applications" "recieved "by"   #this one is accounted for 
+l2 + l6+ l4
+
+"submit "  "application" "by"   + might not have application and have other words in between the two ends 

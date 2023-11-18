@@ -1,0 +1,50 @@
+PATTERN MATCHER 
+
+BAKERSFIELD 
+
+strong: 1        
+br: 100
+
+
+
+
+Stanislaus
+
+strong: 1	
+br: 1
+table: 1
+
+
+
+
+
+CHICO			CHICO				-> same thing just div wraps some of the p's 
+							
+
+
+strong: 1		strong: 1	
+br: 1			br: 1
+div: 1			p: 24
+p: 12
+
+
+
+C.ISLANDS		C.ISLANDS
+
+strong: 1		strong: 1
+br: 1			br: 1
+div: 18 23		div: 17  18
+ul: 1 
+
+
+CSUDH			CSUDH
+
+strong: 1		strong: 1
+br: 1			br: 1
+p: 62			p: 70
+ul: 3  			ul: 4
+			div: 1
+
+
+
+

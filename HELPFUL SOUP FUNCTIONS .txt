@@ -1,0 +1,144 @@
+HELPFUL SOUP FUNCTIONS 
+
+
+A tag’s children are available in a list called .contents:
+
+head_tag = soup.head
+head_tag
+# <head><title>The Dormouse's story</title></head>
+
+head_tag.contents
+[<title>The Dormouse's story</title>]
+
+title_tag = head_tag.contents[0]
+title_tag
+# <title>The Dormouse's story</title>
+title_tag.contents
+# [u'The Dormouse's story']
+
+
+
+Instead of getting them as a list, you can iterate over a tag’s children using the .children generator:
+for child in title_tag.children:
+    print(child)
+
+
+The .contents and .children attributes only consider a tag’s direct children.
+
+
+
+
+The .descendants attribute lets you iterate over all of a tag’s children, recursively: its direct children, the children of its direct children, and so on:
+
+
+
+len(list(soup.children))
+# 1
+len(list(soup.descendants))
+# 25
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+data_soup = BeautifulSoup('<div data-foo="value">foo!</div>')
+data_soup.find_all(data-foo="value")
+# SyntaxError: keyword can't be an expression
+
+You can’t use a keyword argument to search for HTML’s ‘name’ element, because Beautiful Soup uses the name argument to contain the name of the tag itself. Instead, you can give a value to ‘name’ in the attrs argument:
+
+name_soup = BeautifulSoup('<input name="email"/>')
+name_soup.find_all(name="email")
+# []
+name_soup.find_all(attrs={"name": "email"})
+# [<input name="email"/>]
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+
+soup.head.title
+# <title>The Dormouse's story</title>
+
+soup.find("head").find("title")
+# <title>The Dormouse's story</title>
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+One of the three <a> tags is the direct parent of the string in question, so our search finds it. One of the three <p> tags is an indirect parent of the string, and our search finds that as well.
+
+a_string = soup.find(string="Lacie")
+a_string
+# u'Lacie'
+
+a_string.find_parents("a")
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+
+a_string.find_parent("p")
+# <p class="story">Once upon a time there were three little sisters; and their names were
+#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;
+#  and they lived at the bottom of a well.</p>
+
+a_string.find_parents("p", class="title")
+# []
+
+
+
+
+
+
+
+if you set a tag’s .string attribute to a new string, the tag’s contents are replaced with that string:
+
+markup = '<a href="http://example.com/">I linked to <i>example.com</i></a>'
+soup = BeautifulSoup(markup)
+
+tag = soup.a
+tag.string = "New link text."
+tag
+# <a href="http://example.com/">New link text.</a>
+
+---------------------------------------------------------------------------------------------------------------------
+
+WRAP()
+
+
+PageElement.wrap() wraps an element in the tag you specify. It returns the new wrapper:
+soup = BeautifulSoup("<p>I wish I was bold.</p>")
+soup.p.string.wrap(soup.new_tag("b"))
+# <b>I wish I was bold.</b>
+
+soup.p.wrap(soup.new_tag("div")
+# <div><p><b>I wish I was bold.</b></p></div>
+
+
+UNWRAP()
+
+Tag.unwrap() is the opposite of wrap(). It replaces a tag with whatever’s inside that tag. It’s good for stripping out markup:
+
+
+markup = '<a href="http://example.com/">I linked to <i>example.com</i></a>'
+soup = BeautifulSoup(markup)
+a_tag = soup.a
+
+a_tag.i.unwrap()
+a_tag
+# <a href="http://example.com/">I linked to example.com</a>
+Like replace_with(), unwrap() returns the tag that was replaced.
+
+
+

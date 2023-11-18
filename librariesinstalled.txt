@@ -1,0 +1,19 @@
+Libraries Installed in enviroment 
+
+
+
+pip install -U pip setuptools wheel
+
+pip install -U spacy
+
+python -m spacy download en_core_web_sm
+
+pip install pandas openpyxl
+
+
+
+python -m spacy download en_core_web_trf
+en_core_web_lg  (better trained )
+other one is the en_core_web_trf
+
+pip install python-dateutil

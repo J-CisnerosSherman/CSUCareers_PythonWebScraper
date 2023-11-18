@@ -1,0 +1,123 @@
+import spacy
+from spacy.matcher import Matcher
+
+def extract_deadline_date_with_entity(text):
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(text)
+    
+    extracted_date = None
+    for ent in doc.ents:
+        print(f"Entity: {ent.text}, Label: {ent.label_}, Start: {ent.start}, End: {ent.end}")
+        
+    
+    keyword = "Deadline"
+    keyword_index = None
+
+    
+    for i, token in enumerate(doc):
+    # Check if the token text matches the keyword (case insensitive)
+        if token.text.lower() == keyword.lower():
+            keyword_index = i  # Store the token index
+            break  # Stop searching once the keyword is found
+
+    # Check if the keyword was found and get its token index
+    if keyword_index is not None:
+        print(f"Token index of '{keyword}': {keyword_index}")
+    else:
+        print(f"'{keyword}' not found in the document.")
+
+   
+    
+    
+
+
+
+
+
+
+text = "Submission is 2023-10-15. Please submit your application before the deadline date Deadline: October 15th, 2023."
+#deadline_date = extract_deadline_date_with_entity(text)
+print("Extracted Deadline Date:", extract_deadline_date_with_entity(text))
+
+
+Entity: 2023-10-15, Label: DATE, Start: 2, End: 7
+Entity: Deadline, Label: NORP, Start: 16, End: 17
+Entity: October 15th, Label: DATE, Start: 18, End: 20
+Entity: 2023, Label: DATE, Start: 21, End: 22
+Token index of 'Deadline': 14
+Extracted Deadline Date: None
+
+
+
+
+
+
+THIS ONE WORKS FOR THE DATE CLOSEST DATE NEED TO CHECK THE DATE FORMAT 
+
+import spacy
+from spacy.matcher import Matcher
+
+nlp = spacy.load("en_core_web_sm")
+def extract_deadline_date_with_entity(text):
+    #nlp = spacy.load("en_core_web_sm")
+    
+    
+    extracted_date = None
+    
+    # Initialize a matcher to find the keyword "Deadline"
+    matcher = Matcher(nlp.vocab)
+    matcher.add("Deadline", [[{"LOWER": "deadline"}]])
+    
+    matches = matcher(doc)
+    
+    for match_id, token_start, token_end in matches:
+        # Store the token index where "Deadline" is found
+        keyword_index = token_start
+        
+        # Check if the keyword was found and get its token index
+        if keyword_index is not None:
+            print(f"Token index of 'Deadline': {keyword_index}")
+            break  # Stop searching once the keyword is found
+
+    # Iterate through entities
+    for ent in doc.ents:
+        print(f"Entity: {ent.text}, Label: {ent.label_}, Start: {ent.start}, End: {ent.end}")
+    
+    return keyword_index
+
+
+def find_closest_date_entity(doc, index_point):
+    closest_date_entity = None
+    min_difference = float('inf')  # Initialize with a large value
+    
+    for ent in doc.ents:
+        if ent.label_ == "DATE":
+            start_index = ent.start  # Get the start index of the DATE entity
+            difference = abs(start_index - index_point)  # Calculate the difference
+            
+            if difference < min_difference:
+                min_difference = difference
+                closest_date_entity = ent
+    
+    return closest_date_entity
+
+text = "Submission is 2023-10-15. Please submit your application by the date. Deadline: October 15th, 2023."
+doc = nlp(text)
+index_point = extract_deadline_date_with_entity(text)
+print("Extracted Deadline Date: return", extract_deadline_date_with_entity(text))
+ti = find_closest_date_entity(doc, index_point)
+
+print ("clos intendity " , ti)
+
+
+
+Token index of 'Deadline': 16
+Entity: 2023-10-15, Label: DATE, Start: 2, End: 7
+Entity: October 15th, Label: DATE, Start: 18, End: 20
+Entity: 2023, Label: DATE, Start: 21, End: 22
+Token index of 'Deadline': 16
+Entity: 2023-10-15, Label: DATE, Start: 2, End: 7
+Entity: October 15th, Label: DATE, Start: 18, End: 20
+Entity: 2023, Label: DATE, Start: 21, End: 22
+Extracted Deadline Date: return 16
+clos intendity  October 15th

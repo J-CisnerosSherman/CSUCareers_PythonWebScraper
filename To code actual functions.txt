@@ -1,0 +1,519 @@
+To code actual functions 
+
+    '1':'Bakersfield',
+    '2':'Chico',
+    '4':'Chanel Islands',
+    '5':'Maritime Academy',
+    '6':'Dominguez Hills',
+    '7':'Fresno',
+    '8':'Fullerton',
+    '9':'East bay',
+    '10':'Humboldt',
+    '11':'Los Angeles',
+    '12':'Long Beach',
+    '13':'Monterrey Bay',
+    '14':'Northridge',
+    '15':'Pomona',
+    '16':'Sacramento',
+    '17':'San Bernardino',
+    '18':'San Diego',
+    '19':'San Francisco',
+    '20':'San Jose',
+    '21':'San Luis Obispo',
+    '22':'San Marcos',
+    '23':'Sonoma',
+    '24':'Stanislaus'
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+To find the Department, School, College or Division of Key words that end with col _______________________________
+
+
+
+
+About the College:								Northridge
+For more information about the College of Social and Behavioral Sciences
+
+
+
+
+
+
+
+
+
+
+
+To find the Department, School, College or Division of Key words that DONT end with col ____________________________
+
+
+
+
+
+Line 5:Location:  Department of Nursing (4 words) 11  						Bakersfield
+NOTE LOCATION FOR SONOMA IS JUST SONOMA 
+
+
+Line 6: College: College of Behavioral and Social Sciences (7 words)     			Chico
+
+
+
+
+Line 7: Department/School: School of Social Work (5 words)  
+ 	^ #MIGHT BE EMPTY FOR ONE next one is Salary: Alw
+
+
+
+Line 2: Department:  Social Work (3 words)							san marcos		Nothride		
+
+
+School/Department Name: Department of Accounting and Finance					san jose
+
+
+
+Line 1: Program:  Health Science	WHERE DEPARTMENT ALWAYS Is                     		Chanel Islands
+
+
+
+
+
+
+
+Line 1: Department of Visual Arts (4 words)	sHCOOL						FULLERTON
+Line 2: College of the Arts (4 words)		dIVISION
+
+
+
+Line 2: DEPARTMENT OF EDUCATIONAL LEADERSHIP (4 words)						EAST BAY
+or might be at ligh 3
+
+
+COLLEGE: Arts & Letters										Sacramento
+DEPARTMENT: Design
+(Somtimes it has a long p under after college: (1 word) contains "college of"
+they might appear under single line after 
+
+
+About the Department: The School of the Environment 						Sanfrancisco 
+
+
+
+
+IN ITS OWN LINE, NO COLON JUST INFO _____
+
+________________________________________________________________________________
+
+
+
+
+
+Line 6: School of Social Sciences  (not all contain school of)						Bakersfield
+	
+	Line 6 , but not all line has school of info for BK, 
+	longest - 11 words  (entry that didnt have it right away had California..
+
+
+ The College of Health Science								monterry  
+
+The Music Department in the College of Liberal Arts 						OBISPO  in text paragraphs
+
+Line 19: About the Position: (3 words)								CHANEL ISLANDS
+Line 20: The Health Science Department at California State University Channel Islands (CSUCI)     NA
+						
+	About the Program: (3 words)  ++ Can contain program.   NA
+	Line 17: The School of Education (SOE)..... 
+
+
+
+													POMONA TOO
+Line 2: Department of Social Work (4 words) might have  "Division" ALWAYS FOR BOTH@ same position	CSUDH 
+	+might have college and not dept
+Line 3: College of Health and Human Services & Nursing (8 words)	
+Line 4: College of Education (3 words)
+
+	Line 4: Position Description (2 words)   might be at 3  if doesnt contain "Dep: might be here 
+	Line 5: The Department of Social Work at   "The Program of"
+
+
+
+
+Line 2: College of Science and Mathematics (5 words) max 7 		FRESNO				Pomona
+Line 3: Department of Computer Science (4 words)  might have " SCHOOL on either
+	one has everything shifted 1 so starts at line 3 to 4 (usualy htpp:
+
+
+
+Line 2: Rongxiang Xu College of Health and Human Services (8 words)				LA
+Line 4: Department of Public Health (4 words)
+
+
+
+Line 5: College of the Arts (4 words)								LongBEAch
+Line 6: School of Art (3 words)   Department+ less than 10
+
+
+Line 3: JOB SUMMARY (2 words)									San BErnardino
+Line 4: The Department of Art & Design at California State University,
+The IDS Department  (school)
+ABOUT THE DEPARTMENT (3 words)								
+Line 43: To find out more about the Department of Teacher Education and Foundations
+To find out more about the Department of Art and Design: (1 or 2 lines under heading^)				
+
+
+
+
+
+About the Department    									SANFRANCISCO 						
+The Latina/Latino Studies Department   (might contain program, division, school, college)
+
+
+
+
+Line 1: Department Of Nursing (3 words)								SONOMA
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+TO FIND CONTACT INFO : IN LINES THAT END WITH COL __________________________________________
+
+
+
+
+	Job-related questions should be directed to:					CHICO
+
+	line 19, 22, 24 ^
+	might be multiple lines + 2 to 3 after lines 
+	Dr. Emily Fleming, Search Committee Chair  #name  alw in line right after : 
+ 	530.898.6142 | oyasar@csuchico.edu (3 words) (phone might contain /)
+	might have 5 lines, but will contain Department , California Univ, address..
+	Line 22+ varies : Benefits Information: stops and this header its in its own line 
+
+ 	Dr. Celina Phillips, Search Committee Chair (6 words)
+	Line 20: College of Agriculture: PLMS 210; 530.898.4147 (6 words)
+	Line 21: crphillips1@csuchico.edu (1 words) 
+	might contain Phone:	Email: in lines but all weird 
+
+
+
+
+
+	If you have questions regarding the position, please contact:			CSUDH   stanislous 
+	Phu Phan, MSW, Ph.D., Professor and Chair 		name in first line after 
+	Search Committee Chair 
+	Human Services Department (SBS D321)
+	CSU, Dominguez Hills			Might stop at "Department of Social Work"
+	1000 East Victoria Street		dont always have dep, can have all div school col
+	Carson, CA  90747			can stop when line is more than 12 words
+	
+
+	
+If you have any questions regarding this recruitment, please contact:'					STANISLOUS 
+
+Inquiries may be addressed to
+Inquiries should be addressed to:
+Requests for information about the position should be addressed to:
+Please direct all questions about the position to the department chair:
+Inquiries may be directed to the Department Chair:
+
+
+
+
+
+	Committee Information and Search process:						Fresno
+	Search Chair:   Shabnam Pooya, PhD 	always first
+                       Department of Food Science and Nutrition     -USually here 
+                       Jordan College of Agricultural Science & Technology
+                       Email: shabnampooya@csufresno.edu
+		usually until About Fresno State or mroe than 12
+
+		Search Committee Information:
+		Committee Information: (2 words)
+
+
+
+You may refer questions regarding the position to:						EAST BAY
+Dr. Peg Winkelman peg.winkelman@csueastbay.edu
+Dr. Mariama Gray mari.gray@csueastbay.edu
+
+
+Please direct any questions pertaining to this position,.... : 					Humbolt
+next line is where info is .. contains Phone: Email: in lines 
+until APPLICATION DEALINE:
+
+
+
+
+Requests for information should be addressed to:						Long BEach
+Requests for information about the position should be addressed to:
+
+Sometimes it has 2 
+Requests for information and process should be addressed to:
+Requests for information about the position should be addressed to:
+Requests for information about the position and/or process should be addressed to:
+Requests for information about the position should be addressed to:
+Illustration Search Committee Chair
+California State University, Long Beach
+School of Art
+Attn: Karen Warner
+1250 Bellflower Boulevard     might have Email: E-Mail: Telephone:
+Long Beach, CA 90840-3501
+562-985-7907 or COTA-SOA-Apply@csulb.edu
+
+
+
+
+
+Inquiries should be addressed to:								monterry
+Nayan G. Ramirez, Ph.D.
+Search Committee Chair
+nayan.ramirez@csun.edu
+General Information:
+
+
+
+
+For questions about this position, please contact: (7 words)
+Line 27: For more information regarding the position, please contact: (8 words)				San Bernardino
+Line 28: Recruitment Chair (2 words)
+Line 29: Dr. Jane Chin Davidson (4 words)
+Line 30: jchindavidson@csusb.edu (1 words)
+Line 31: HOW TO APPLY (3 words)
+
+
+Questions concerning this position may be directed to:							SONOMA 
+Questions concerning the application process may be directed to:
+
+
+
+TO fIND CONTACT INFO : IN LINES THAT Dont END WITH COL _______________________________________________________
+
+
+
+LINE 10 : Contact:   ABOUT FOUR WORDS AFTER 					Bakersfield
+	Contact:  Dr. Maria Rubolino (9 words) 
+	Search and Screening Committee Chair (5 words)	might be all in one line still stops at Deadline:
+	mrubolino@csub.edu (1 words)
+	(661) 654-2399 (2 words)
+
+	Usually + lines after stops at Deadline:
+		Application Deadline:
+
+	Line 11: Phone: (661) 654-3082 (3 words)				Bakersfield NA
+	Line 12: Email: email:							Bakersfield NA										
+
+
+
+contact: Iris Gallardo, Human Resources, at 510-885-2335 			EAST BAY
+
+
+						
+
+
+Please direct all questions about the position to +++:(might nto have :)  SAME LINE INFO 		Fresno
+For inquiries about the position, please call (657) 278-3614  No name
+
+
+
+
+LINE 57 Questions about this(THE) position should be directed to... 						CHANEL ISLANDS     SACRAMENTO
+	Next heading sections is "Compensation" AND after Appl Deadline:
+
+	Please direct all questions about the position to: Dr. Andrea Bingham,   
+	Committee Chairperson, at andrea.bingham@csuci.edu.(one line)
+
+	if not contact info it has this sometimes 
+	Submit all required materials to the CSUCI Careers application web address below:
+
+
+	Please address all questions to the search committee chair ... same line 				LA	SACRAMENTo
+	Please address all questions to the search committee chair (Dr. Jennifer Garrison) at:
+
+
+														Monterry   Northridge 
+Reasonable accommodations will be provided for qualified applicants with disabilities who self-disclose by contacting Human Resources at (831) 582-3389 or humanresources@csumb.edu. (21 words)
+
+															Nothridge 
+Inquiries may be addressed to: Dr. Alexandria Hollett, Search and Screen Chair alexandria.hollett@csun.edu
+
+
+
+For questions and inquiries email Kirsten Munk at kirsten.munk@csus.edu							SACRAMENTO
+For questions and inquiries email the Search Committee Chair Dr. Chang Liu (chang.liu@csus.edu)
+Please direct questions to the Faculty Search Committee Chair, Carolyn Gibbs, at carolyng@csus.edu.
+Please direct questions to: Dr. Phillip Akutsu, Clinical/Counseling Psychology Position Screening Committee Chair at psycsearch@csus.edu.
+
+
+
+
+Please direct all questions about the position to: Dr. Cyrus Ginwala						san francisco 
+
+
+
+
+Inquiries may be directed to the Department Chair: Prof. Elizabeth Grace, elizabeth.grace@sjsu.edu			san jose
+Inquiries may be directed to the CCS Department Chair or Search Committee Chair: Dr. Ella Maria Diaz, ella.diaz@sjsu.edu.
+Inquiries may be directed to the Search Committee Chair (Dr. Evan Palmer, evan.palmer@sjsu.edu) or Department Chair (Dr. Mark Van Selst,
+Inquiries may be directed to
+
+															obispo
+
+For questions about the position please contact Dr. Kenneth Habib (khabib@calpoly.edu) search committee chair and professor, Music Department; or Dr. Alicia Doyle (adoyle04@calpoly.edu), department chair and professor, Music Department. (29 words)
+
+
+
+Questions should be sent to the Office of Human Resources at hr@csusm.edu.						marcos
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+TO FIND OUT ABOUT REVIEW DATE : IN LINES THAT END IN COL Actual info appears in next line 												_____________________________________________________
+
+
+
+
+									
+												Northridge
+LINE 44 : Application Deadline:	 (28 words line after)						CHANEL ISLANDS  FULLERTON + sONOMA (NOT :")
+	Screening of applications will begin on December 15, 2023.(NEXT LINE)
+	One entry in full has the contact info in this line too
+	First consideration will be given to applications received by January 17, 2024. 
+	Applications received by November 6, 2023 will be given full consideration.
+
+
+
+Line 29: Application Deadline Date (3 words) NO : sometimes					CSDUH
+Line 30: The position is open until filled. Review of applications will begin in November 20, 2023. 
+For full consideration, please submit your completed application with the required materials no later than January 31, 2024. (33 words)     might have two dates, pick the one with a a day and month and closest to today
+
+	Application Deadline Date:
+	Review of applications will begin in January 5, 2024
+
+
+
+
+
+
+Application Procedures: (2 words)					2 				FRESNO
+Line 27: To ensure full consideration, applicants should submit all application materials by November 1, 2023; review of applications will continue until the position is filled. Note: All positions at Fresno State are subject to funding availability. (35 words)
+
+
+Application Procedure 											San Fran 
+Review of applications will begin on December 1st, 2023
+
+
+
+
+Line 27: Application Review Date: (3 words)	CHECK Frist this one cuz when both appear             FRESNO
+Line 28: Review Commences October 31, 2023 (5 words
+
+APPLICANT INSTRUCTIONS:	( alway one or two lines after)										SACRAMENTO
+Review of applications will begin January 15, 2024, and the position will remain open until filled.
+To ensure full consideration, completed applications should be received by November 5, 2023.
+For full consideration, please submit the following documents by Friday, December 1, 2023
+Initial review of applications will begin on November 6, 
+Review of applications will begin January 15, 2024, 
+Applications will be reviewed starting October 20, 2023;
+
+
+
+
+
+
+TO FIND OUT ABOUT REVIEW DATE : IN LINES THAT DONT END IN COL ________________________________________________________
+
+
+
+
+LINE 13 +  :  Deadline: Applications are due by December 14, 2023. (8 words)	BAKERSFIELD   LA
+LINE14:	Application Deadline: 							Long Beach 
+
+
+
+
+
+Aplication procedure   			many lines under or same line 
+Application review begins: January 17, 2024. (6 words)				SAN FRANCISCO
+Applications will be reviewed beginning December 1, 2023. (8 words)
+Review of applications will begin on December 1								MArcos
+Applications are accepted until November 10th or until the position is filled.
+online application must be completed by October 8th, 2023 to receive consideration. 
+For best consideration, please submit application by Monday, October 2. 
+
+
+
+
+
+
+
+
+Line 9: Review Date:	(15 words)	might not give u one but section is there			CHICO
+Line 9 : Initial Review Date:  		might contain ; after date 
+
+
+
+Review by date: Nov 15 for full consideration		#under Min degree requriemetnsx 1    	CHANEL ISLANDS
+
+
+
+
+
+Review of applications will begin in November 15,2023. For full consideration, 			CSUDH 
+please submit your completed application with the required materials no later than November 18, 2023. (32 words)
+just line no head
+
+
+Screening of completed application files will begin on October 13, 2023. 			STANISLUS  
+ON LINE AFTER CONTACT INFO ENDS
+Screening of completed application files will begin January 25, 
+Line 18: Screening of complete application files will begin on August 21, 2023. 
+Full consideration is guaranteed to applicants who apply by September 15, 2023.
+Initial Review Date:
+Initial review of applications will begin
+
+
+
+Application Procedures:  Review of applications will begin on December 1,		FRESNO
+on same line, it might have two dates get closest one to today  (60)
+
+Application Review Date:  Friday, October 20, 2023 (7 words)
+
+
+
+APPLICATION DEADLINE: Review of applicants begins September 28, 2023. 			EAST BAy
+
+Application Deadline:November 1, 2023 							SAn jose
+
+
+Priority Screening Date:  January 16, 2024							Montery
+
+
+For full consideration apply by the REVIEW BEGIN DATE: November 20, 2023.			OBISPO
+Review Begin Date: 11-01-2023.
+Review of applications will begin December 15, 2023. Applications received after that date may be considered.
+Questions can be emailed to Lizabeth Thompson (lschleme@calpoly.edu).
+
+
+
+
+
+
+
+
+
